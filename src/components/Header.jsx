@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import logo from "../img/logo.png";
-import avator from '../img/avatar.png'
+import avatar from '../img/avatar.png';
+import userPic from '../img/profilepic.jpeg';
 import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useStateValue } from "../context/StateProvider";
+import { actionType } from "../context/reducer";
 export default function Header() {
+
+  const [state, dispatch] = useStateValue();
+
+  const login = async ()=>{
+    const user = {
+      email: 'user@test.com',
+      pass: '123'
+    }
+
+    dispatch({
+      type: actionType.SET_USER,
+      user: user
+    })
+    localStorage.setItem('user', JSON.stringify(user))
+  }
+
   return (
     <header className="fixed z-50 w-screen p-6 px-16">
       {/* desktop & tablet */}
@@ -29,7 +48,7 @@ export default function Header() {
             </div>
           </div>
           
-          <motion.img whileTap={{scale: 0.6}} src={avator} alt="user picture" className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl"/>
+          <motion.img whileTap={{scale: 0.6}} onClick={login} src={ state.user ? userPic : avatar } alt="user picture" className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl rounded-full"/>
         </div>
       </div>
     </header>
