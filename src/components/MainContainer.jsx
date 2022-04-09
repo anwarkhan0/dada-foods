@@ -1,7 +1,11 @@
 import React from 'react'
+import HomeContainer from './HomeContainer'
+
 
 export default function MainContainer() {
   return (
-    <div>MainContainer</div>
+    <div className='w-full h-auto flex-col items-center justify-center'>
+      <HomeContainer />
+    </div>
   )
 }

@@ -4,10 +4,10 @@ import { Header, MainContainer, CreateContainer } from "./components";
 
 function App() {
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       <div className="w-screen h-auto flex flex-col bg-slate-100">
         <Header />
-        <main className="mt-10 w-full p-8">
+        <main className="mt-10 md:mt-20 p-2 w-full">
           <Routes>
             <Route path="/" element={<MainContainer />} />
             <Route path="/createItem" element={<CreateContainer />} />
