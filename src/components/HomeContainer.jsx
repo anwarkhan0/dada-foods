@@ -28,25 +28,25 @@ export default function HomeContainer() {
         <img src={HeroBg} className='h-96 w-full md:w-auto ml-auto md:h-auto' alt="" />
         <div className='absolute flex flex-wrap mt-12 justify-center items-center gap-12 pt-6'>
             <div className=' md:w-[190px] h-32 basis-2/5 md:basis-auto md:h-52 p-2 bg-purple-100 backdrop-blur-md rounded-3xl flex flex-col items-center justify-center'>
-                <img src={iceImg} className='w-28 md:w-40 -mt-20' alt="" />
+                <img src={iceImg} className='w-24 md:w-40 -mt-20' alt="" />
                 <p className='text-base font-semibold'>Ice Cream</p>
                 <p className='text-sm text-gray-400'>vanilla and something else</p>
                 <p className='text-sm font-semibold'>2.5 <span className='text-red-500'>$</span></p>
             </div>
             <div className=' md:w-[190px] h-32 basis-2/5 md:basis-auto md:h-52 p-2 bg-purple-100 backdrop-blur-md rounded-3xl flex flex-col items-center justify-center'>
-                <img src={imgOne} className='w-28 md:w-40 -mt-20' alt="" />
+                <img src={imgOne} className='w-24 md:w-40 -mt-20' alt="" />
                 <p className='text-base font-semibold'>Straberry</p>
                 <p className='text-sm text-gray-400'>vanilla and something else</p>
                 <p className='text-sm font-semibold'>2.5 <span className='text-red-500'>$</span></p>
             </div>
             <div className=' md:w-[190px] h-32 basis-2/5 md:basis-auto md:h-52 p-2 bg-purple-100 backdrop-blur-md rounded-3xl flex flex-col items-center justify-center'>
-                <img src={imgTwo} className='w-28 md:w-40 -mt-20' alt="" />
+                <img src={imgTwo} className='w-24 md:w-40 -mt-20' alt="" />
                 <p className='text-base font-semibold'>Chicken Karahi</p>
                 <p className='text-sm text-gray-400'>vanilla and something else</p>
                 <p className='text-sm font-semibold'>2.5 <span className='text-red-500'>$</span></p>
             </div>
             <div className=' md:w-[190px] h-32 basis-2/5 md:basis-auto md:h-52 p-2 bg-purple-100 backdrop-blur-md rounded-3xl flex flex-col items-center justify-center'>
-                <img src={imgThree} className='w-28 md:w-40 -mt-20' alt="" />
+                <img src={imgThree} className='w-24 md:w-40 -mt-20' alt="" />
                 <p className='text-base font-semibold'>Fried Fish</p>
                 <p className='text-sm text-gray-400'>vanilla and something else</p>
                 <p className='text-sm font-semibold'>2.5 <span className='text-red-500'>$</span></p>

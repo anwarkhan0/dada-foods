@@ -53,10 +53,10 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 200 }}
           >
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">Menu</li>
-            <li className="cursor-pointer">About Us</li>
-            <li className="cursor-pointer">Services</li>
+            <li className="cursor-pointer" onClick={()=> setIsMenu(false)}>Home</li>
+            <li className="cursor-pointer" onClick={()=> setIsMenu(false)}>Menu</li>
+            <li className="cursor-pointer" onClick={()=> setIsMenu(false)}>About Us</li>
+            <li className="cursor-pointer" onClick={()=> setIsMenu(false)}>Services</li>
           </motion.ul>
 
           <div className="relative flex items-center justify-center">
@@ -81,7 +81,7 @@ export default function Header() {
                 className="w-40 bg-slate-200 shadow-xl rounded-lg flex flex-col absolute py-2 top-12 right-4"
               >
                 <Link to={"/createItem"}>
-                  <p className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-300">
+                  <p className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-300" onClick={()=> setIsMenu(false)}>
                     New Item <FaPlus />
                   </p>
                 </Link>
