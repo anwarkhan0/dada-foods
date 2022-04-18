@@ -10,14 +10,14 @@ export default function HomeContainer() {
   return (
     <section className='grid grid-cols-1 md:grid-cols-2 gap-2 w-full mt-5' id='home'>
       <div className='py-2 px-1 flex-1 flex flex-col items-start gap-4'>
-        <div className='flex items-center gap-1 justify-center bg-orange-100 rounded-full p-2'>
+        <div className='flex items-center gap-1 justify-center bg-orange-100 rounded-full p-2 mt-4 md:mt-none'>
           <p className='text-orange-500 font-semibold'>Bike Devlivery</p>
           <div className='w-6 h-6 rounded-full overflow-hidden drop-shadow-xl'>
             <img src={delivery} className='w-full h-full bg-white rounded-full object-contain' alt="" />
           </div>
         </div>
-        <p className='text-[3.5rem] lg:text-[4rem] font-bold tracking-wide'>
-          The Best Food provider in <span className='text-orange-600 text-[4.5rem] lg:text-[5rem]'>Your Town</span>
+        <p className='text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] font-bold tracking-wide'>
+          The Best Food provider in <span className='text-orange-600 text-[3.5rem] md:text-[4.5] lg:text-[5rem]'>Your Town</span>
         </p>
         <p className='text-base text-center md:text-left'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
 
