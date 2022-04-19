@@ -5,6 +5,7 @@ import HomeContainer from "./HomeContainer";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import RowContainer from "./RowContainer";
 import MenuContainer from "./MenuContainer";
+import CartContainer from "./CartContainer";
 
 export default function MainContainer() {
   
@@ -29,6 +30,7 @@ export default function MainContainer() {
       </section>
 
       <MenuContainer />
+      <CartContainer />
     </div>
   );
 }
